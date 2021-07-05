@@ -22,4 +22,13 @@ interface EndPoints {
 
     @GET ("/myslim/api/reportes/{id}")
     fun getReporteById(@Path("id") id: String?): Call<Reporte>
+
+    @FormUrlEncoded
+    @POST("/smartcity/api/reportes_post")
+    fun reportar(@Field("latitude") latitude: String?,
+                 @Field("longitude") longitude: String?,
+                 @Field("tipo") tipo: String?,
+                 @Field("descricao") descricao: String?,
+                 @Field("user_id") user_id: Int?): Call<OutputReporte>
+
 }

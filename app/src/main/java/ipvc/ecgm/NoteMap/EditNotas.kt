@@ -52,7 +52,6 @@ class EditNotas : AppCompatActivity() {
             }
             finish()
         }
-
     }
 
     companion object {

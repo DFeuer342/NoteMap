@@ -25,4 +25,6 @@
     <string name="app_name">NoteMap</string>
     <string name="textInfoAboutObjective">Objective</string>
     <string name="btaddReporte">Add Report</string>
+    <string name="reportTipo">Tipe</string>
+    <string name="reportDesc">Description</string>
 </resources>

@@ -34,7 +34,8 @@ class Menu : AppCompatActivity() {
         startActivity(intent)
     }
     fun btaddReporte(view: View) {
-        Toast.makeText(this@Menu,"Activity Extra", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this@Menu, AddReporte::class.java)
+        startActivity(intent)
     }
 
 }
