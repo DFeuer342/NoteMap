@@ -1,0 +1,27 @@
+<resources>
+    <string name="textInfoAbout">The application aims to show and report existing problems in a city</string>
+    <string name="textInfoAboutCreator">Created by Tiago Rebelo, student of the ECGM course, number 20537</string>
+    <string name="btVoltar">Return</string>
+    <string name="Edit_nota">Edit Note</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="textNote">New Note</string>
+    <string name="newNoteTitle">Title</string>
+    <string name="newNoteDescri">Description</string>
+    <string name="btSave">Save</string>
+    <string name="btCancel">Cancel</string>
+    <string name="textNoteEdit">Edit Note</string>
+    <string name="btDelete">Delete</string>
+    <string name="LoginName">Name</string>
+    <string name="loginPassword">Password</string>
+    <string name="LoginCheck">Stay logged in</string>
+    <string name="btEnter">Login</string>
+    <string name="AppTitle" translatable="false">NoteMap</string>
+    <string name="textWellcome">Wellcome!!</string>
+    <string name="btStart">Enter</string>
+    <string name="btPersonalNotes">Personal Notes</string>
+    <string name="btAbout">About</string>
+    <string name="btMap">Map</string>
+    <string name="btLogout">Logout</string>
+    <string name="app_name">NoteMap</string>
+    <string name="textInfoAboutObjective">Objective</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/AppTitle"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textRecep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/textWellcome"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btEntrar"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:onClick="btMapa"
+                android:text="@string/btMap"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                app:backgroundTint="#3D7887" />
+
+            <Button
+                android:id="@+id/btNotas"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:onClick="btExtra"
+                android:text="@string/btCancel"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                app:backgroundTint="#3D7887" />
+
+            <Button
+                android:id="@+id/btSair"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:onClick="btSair"
+                android:text="@string/btLogout"
+                android:textSize="20dp"
+                app:backgroundTint="#C14242" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

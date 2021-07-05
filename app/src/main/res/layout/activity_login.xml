@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    >
+
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            tools:srcCompat="@drawable/avatar" />
+
+        <EditText
+            android:id="@+id/edTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/LoginName"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:inputType="textPassword"
+            android:hint="@string/loginPassword"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/checkManterIni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/LoginCheck">
+        </CheckBox>
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:onClick="btLogin"
+            android:text="@string/btEnter"
+            app:backgroundTint="#3D7887" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CM_Projeto_20537</string>
+    <string name="Edit_nota">Nota editada</string>
+    <string name="textInfoAbout">Esta aplicação pretende mostrar todos os problemas de uma cidade.</string>
+    <string name="textInfoAboutCreator">Criado por Tiago Rebelo, aluno do curso ECGM, numero 20537</string>
+    <string name="btVoltar">Voltar</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="textNote">Nova Nota</string>
+    <string name="newNoteTitle">Titulo</string>
+    <string name="newNoteDescri">Descrição</string>
+    <string name="btSave">Guardar</string>
+    <string name="btCancel">Cancelar</string>
+    <string name="textNoteEdit">Editar Nota</string>
+    <string name="btDelete">Eliminar</string>
+    <string name="LoginName">Nome</string>
+    <string name="loginPassword">Password</string>
+    <string name="LoginCheck">Manter sessão iniciada</string>
+    <string name="btEnter">Entrar</string>
+    <string name="textWellcome">Bem-Vindo(a)!!</string>
+    <string name="btStart">Conectar</string>
+    <string name="btPersonalNotes">Notas Pessoais</string>
+    <string name="btAbout">Sobre</string>
+    <string name="btMap">Mapa</string>
+    <string name="btLogout">Desconectar</string>
+    <string name="textInfoAboutObjective">Objetivo</string>
+</resources>
