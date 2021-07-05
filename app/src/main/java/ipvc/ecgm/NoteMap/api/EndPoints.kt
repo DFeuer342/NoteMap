@@ -17,6 +17,9 @@ interface EndPoints {
     fun login(@Field("username") username: String?, @Field("password") password: String?): Call<OutputLogin>
 
     //-------------------   Actividade MapsActivity -----------------------------------
-    @GET ("/myslim/api/problemas")
-    fun getProblemas(): Call<List<Problema>>
+    @GET ("/myslim/api/reportes")
+    fun getReportes(): Call<List<Reporte>>
+
+    @GET ("/myslim/api/reportes/{id}")
+    fun getReporteById(@Path("id") id: String?): Call<Reporte>
 }

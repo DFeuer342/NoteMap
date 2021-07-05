@@ -1,6 +1,6 @@
 package ipvc.ecgm.NoteMap.api
 
-data class Problema(
+data class Reporte(
     val id: Int,
     val latitude: Float,
     val longitude: Float,
