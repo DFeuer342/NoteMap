@@ -33,7 +33,7 @@ class Menu : AppCompatActivity() {
         val intent = Intent(this@Menu, MapsActivity::class.java)
         startActivity(intent)
     }
-    fun btExtra(view: View) {
+    fun btaddReporte(view: View) {
         Toast.makeText(this@Menu,"Activity Extra", Toast.LENGTH_SHORT).show()
     }
 

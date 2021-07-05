@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -48,19 +49,20 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val request = ServiceBuilder.buildService(EndPoints::class.java)
         val call = request.getReportes()
         var coordenadas: LatLng
-        val user_id = shared_preferences.getInt("id", 0)
-
+        val sessao_id = shared_preferences.getInt("id", 0)
+        Log.d("Reportes", sessao_id.toString())
         call.enqueue(object : Callback<List<Reporte>> {
             override fun onResponse(call: Call<List<Reporte>>, response: Response<List<Reporte>>){
                 if (response.isSuccessful){
+                    Log.d("Reportes", response.body().toString())
                     reportes = response.body()!!
                     for (reporte in reportes){
                         coordenadas = LatLng(reporte.latitude.toDouble(), reporte.longitude.toDouble())
-                        if(reporte.utilizador_id == user_id){
+                        if(reporte.user_id == sessao_id){
                             mMap.addMarker(MarkerOptions().position(coordenadas).title(reporte.id.toString()).snippet(reporte.tipo + "-" + reporte.descricao))
                                 .setIcon(
                                     BitmapDescriptorFactory.defaultMarker(
-                                        BitmapDescriptorFactory.HUE_GREEN))
+                                        BitmapDescriptorFactory.HUE_BLUE))
                         }else{
                             mMap.addMarker(MarkerOptions().position(coordenadas).title(reporte.id.toString()).snippet(reporte.tipo + "-" + reporte.descricao))
                         }

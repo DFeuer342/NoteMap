@@ -56,12 +56,12 @@
                 app:backgroundTint="#3D7887" />
 
             <Button
-                android:id="@+id/btNotas"
+                android:id="@+id/btaddReporte"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:onClick="btExtra"
-                android:text="@string/btCancel"
+                android:onClick="btaddReporte"
+                android:text="@string/btaddReporte"
                 android:textSize="20dp"
                 android:layout_marginBottom="150dp"
                 app:backgroundTint="#3D7887" />

@@ -6,5 +6,5 @@ data class Reporte(
     val longitude: Float,
     val tipo: String,
     val descricao: String,
-    val utilizador_id: Int
+    val user_id: Int
 )

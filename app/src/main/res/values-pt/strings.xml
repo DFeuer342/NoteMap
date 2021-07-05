@@ -24,4 +24,5 @@
     <string name="btMap">Mapa</string>
     <string name="btLogout">Desconectar</string>
     <string name="textInfoAboutObjective">Objetivo</string>
+    <string name="btaddReporte">Novo Reporte</string>
 </resources>

@@ -24,4 +24,5 @@
     <string name="btLogout">Logout</string>
     <string name="app_name">NoteMap</string>
     <string name="textInfoAboutObjective">Objective</string>
+    <string name="btaddReporte">Add Report</string>
 </resources>
