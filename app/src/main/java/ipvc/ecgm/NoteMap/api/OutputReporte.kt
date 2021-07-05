@@ -3,7 +3,7 @@ package ipvc.ecgm.NoteMap.api
 data class OutputReporte(
     val latitude: String,
     val longitude: String,
-    val tipo: String,
+    val titulo: String,
     val descricao: String,
     val user_id: String,
     val status: String,

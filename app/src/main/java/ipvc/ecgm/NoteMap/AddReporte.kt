@@ -22,7 +22,7 @@ import retrofit2.Response
 
 class AddReporte : AppCompatActivity() {
 
-    private lateinit var reporteTextTipo: EditText
+    private lateinit var reporteTextTitulo: EditText
     private lateinit var reporteTextDesc: EditText
     private lateinit var shared_preferences: SharedPreferences
     private var latitude : Double = 0.0
@@ -37,7 +37,7 @@ class AddReporte : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_reporte)
 
-        reporteTextTipo = findViewById(R.id.reportTipo)
+        reporteTextTitulo = findViewById(R.id.reportTitulo)
         reporteTextDesc = findViewById(R.id.reportDesc)
         shared_preferences = getSharedPreferences("shared_preferences", Context.MODE_PRIVATE)
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -62,23 +62,29 @@ class AddReporte : AppCompatActivity() {
         val request = ServiceBuilder.buildService(EndPoints::class.java)
         val latitude = latitude
         val longitude = longitude
-        val tipo = reporteTextTipo.text.toString()
+        val titulo = reporteTextTitulo.text.toString()
         val descricao = reporteTextDesc.text.toString()
         val sessao_id = shared_preferences.getInt("id", 0)
+        Log.d("Erro", "Linha68")
+        Log.d("Erro", "id "+ sessao_id.toString())
 
-        val call = request.reportar(
-            latitude = latitude.toString(),
-            longitude = longitude.toString(),
-            tipo = tipo,
-            descricao = descricao,
-            user_id = sessao_id)
-        Log.d("Valida", call.toString())
+        val call = request.setReportes(
+                latitude = latitude.toString(),
+                longitude = longitude.toString(),
+                titulo = titulo,
+                descricao = descricao,
+                user_id = sessao_id)
+
+        Log.d("Erro", "Linha76")
+        Log.d("Erro", call.toString())
+
         call.enqueue(object : Callback<OutputReporte> {
             override fun onResponse(call: Call<OutputReporte>, response: Response<OutputReporte>) {
                 if (response.isSuccessful) {
                     val resposta: OutputReporte = response.body()!!
                     Toast.makeText(this@AddReporte, resposta.MSG, Toast.LENGTH_LONG).show()
-                    Log.d("Valida", resposta.MSG)
+                    Log.d("Erro", "Linha84")
+                    Log.d("Erro", resposta.MSG)
                     val intent = Intent(this@AddReporte, Menu::class.java)
                     startActivity(intent)
                     finish()
@@ -86,6 +92,7 @@ class AddReporte : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<OutputReporte>, t: Throwable) {
+                Log.d("Erro", "Linha93")
                 Log.d("Erro", "${t.message}")
             }
         })

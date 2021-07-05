@@ -43,7 +43,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
 
         shared_preferences = getSharedPreferences("shared_preferences", Context.MODE_PRIVATE)
-
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
         val request = ServiceBuilder.buildService(EndPoints::class.java)
@@ -59,12 +58,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     for (reporte in reportes){
                         coordenadas = LatLng(reporte.latitude.toDouble(), reporte.longitude.toDouble())
                         if(reporte.user_id == sessao_id){
-                            mMap.addMarker(MarkerOptions().position(coordenadas).title(reporte.id.toString()).snippet(reporte.tipo + "-" + reporte.descricao))
+                            mMap.addMarker(MarkerOptions().position(coordenadas).title(reporte.id.toString()).snippet(reporte.titulo + "-" + reporte.descricao))
                                 .setIcon(
                                     BitmapDescriptorFactory.defaultMarker(
                                         BitmapDescriptorFactory.HUE_BLUE))
                         }else{
-                            mMap.addMarker(MarkerOptions().position(coordenadas).title(reporte.id.toString()).snippet(reporte.tipo + "-" + reporte.descricao))
+                            mMap.addMarker(MarkerOptions().position(coordenadas).title(reporte.id.toString()).snippet(reporte.titulo + "-" + reporte.descricao))
                         }
                     }
                 }
@@ -103,7 +102,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             return
         } else{
             mMap.isMyLocationEnabled = true
-
             fusedLocationClient.lastLocation.addOnSuccessListener(this) {location ->
 
                 if(location != null){
