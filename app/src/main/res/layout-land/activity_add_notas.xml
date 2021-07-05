@@ -1,78 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".EditNotas">
+    android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="@string/Edit_nota"
+        android:text="@string/textNote"
         android:textColor="@color/black"
         android:textSize="30dp" />
 
     <EditText
-        android:id="@+id/textTituloEdit"
+        android:id="@+id/addNotaTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="textPersonName"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:hint="@string/newNoteTitle" />
 
     <EditText
-        android:id="@+id/textDescEdit"
+        android:id="@+id/addNotaDescricao"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:inputType="textPersonName"
         android:layout_marginHorizontal="20dp"
-        android:gravity="top" />
+        android:gravity="top"
+        android:hint="@string/newNoteDescri" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btCancelar"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="190dp"
-            android:gravity="center"
-            android:text="@string/btCancel"
-            app:backgroundTint="@android:color/darker_gray" />
-
-        <Button
-            android:id="@+id/btApagarNota"
+            android:id="@+id/btGuardarNota"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:layout_marginRight="20dp"
             android:gravity="center"
-            android:text="@string/btDelete"
-            app:backgroundTint="@color/design_default_color_error" />
+            android:text="@string/btSave"
+            app:backgroundTint="#43A047"
+            android:onClick="btAddNotaGuardar"/>
 
         <Button
-            android:id="@+id/btGuardarNota"
+            android:id="@+id/btCancelar"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:text="@string/btSave"
-            app:backgroundTint="#43A047" />
+            android:onClick="btAddNotaCancelar"
+            android:text="@string/btCancel"
+            app:backgroundTint="@android:color/holo_red_dark" />
     </LinearLayout>
 
 </LinearLayout>

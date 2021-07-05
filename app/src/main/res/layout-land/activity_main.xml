@@ -28,8 +28,8 @@
 
         <Button
             android:id="@+id/btEntrar"
-            android:layout_width="400dp"
-            android:layout_height="70dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:onClick="btEntrar"
             android:text="@string/btStart"
@@ -40,8 +40,8 @@
 
         <Button
             android:id="@+id/btNotas"
-            android:layout_width="400dp"
-            android:layout_height="70dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:onClick="btNotas"
             android:text="@string/btPersonalNotes"
@@ -51,12 +51,13 @@
 
         <Button
             android:id="@+id/btAbout"
-            android:layout_width="400dp"
-            android:layout_height="70dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:onClick="btAbout"
             android:text="@string/btAbout"
             android:textSize="20dp"
             app:backgroundTint="#3D7887" />
     </LinearLayout>
+
 </LinearLayout>

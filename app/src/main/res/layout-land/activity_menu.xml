@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -25,9 +25,9 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:text="@string/AppTitle"
-            android:textSize="40dp" />
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textRecep"
@@ -35,19 +35,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/textWellcome"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/btEntrar"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:onClick="btMapa"
                 android:text="@string/btMap"
@@ -57,19 +57,19 @@
 
             <Button
                 android:id="@+id/btNotas"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:onClick="btExtra"
-                android:text="@string/btCancel"
+                android:onClick="btaddReporte"
+                android:text="@string/btaddReporte"
                 android:textSize="20dp"
                 android:layout_marginBottom="10dp"
                 app:backgroundTint="#3D7887" />
 
             <Button
                 android:id="@+id/btSair"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:onClick="btSair"
                 android:text="@string/btLogout"

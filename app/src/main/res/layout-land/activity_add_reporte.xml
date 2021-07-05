@@ -5,15 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="20dp"
     tools:context=".AddReporte">
-
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="@string/newReport"
         android:textColor="@color/black"
@@ -38,9 +37,9 @@
         android:textSize="18sp" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
+
         android:gravity="center"
         android:orientation="horizontal">
 
