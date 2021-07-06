@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
@@ -60,5 +61,9 @@ class EditNotas : AppCompatActivity() {
         const val EDIT_ID = "EDIT_ID"
         const val EDIT_TITULO = "EDIT_TITULO"
         const val EDIT_DESCRICAO = "EDIT_DESCRICAO"
+    }
+
+    fun btVoltar(view: View) {
+        finish()
     }
 }

@@ -22,10 +22,11 @@
     <string name="btAbout">About</string>
     <string name="btMap">Map</string>
     <string name="btLogout">Logout</string>
-    <string name="app_name">NoteMap</string>
+    <string name="app_name" translatable="false">NoteMap</string>
     <string name="textInfoAboutObjective">Objective</string>
     <string name="btaddReporte">Add Report</string>
     <string name="reportTipo">Tipe</string>
     <string name="reportDesc">Description</string>
     <string name="newReport">New Report</string>
+    <string name="reportTitle">Title</string>
 </resources>

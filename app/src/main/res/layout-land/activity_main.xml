@@ -34,7 +34,7 @@
             android:onClick="btEntrar"
             android:text="@string/btStart"
             android:textSize="20dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             app:backgroundTint="#3D7887" />
 

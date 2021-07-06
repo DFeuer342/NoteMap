@@ -62,11 +62,7 @@ class ListaNotas : AppCompatActivity(), CellClickListener {
                 NotaViewModel.insert(nota)
                 Toast.makeText(this, "Nota guardada.", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(
-                    applicationContext,
-                    "Dados vazios. Operação cancelada",
-                    Toast.LENGTH_LONG).show()
-                Toast.makeText(this, "Nota guardada.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext,"Dados vazios. Operação cancelada",Toast.LENGTH_LONG).show()
             }
         }
         // EDITAR E APAGAR NOTA
@@ -101,7 +97,6 @@ class ListaNotas : AppCompatActivity(), CellClickListener {
         intent.putExtra(PARAM_DESCRICAO, data.descricao.toString())
         startActivityForResult(intent, newNotasActivityRequestCode2)
         Log.d("Obser", data.id.toString())
-        Toast.makeText(this,data.id.toString(), Toast.LENGTH_SHORT).show()
     }
 
 }

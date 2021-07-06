@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CM_Projeto_20537</string>
     <string name="Edit_nota">Nota editada</string>
     <string name="textInfoAbout">Esta aplicação pretende mostrar todos os problemas de uma cidade.</string>
     <string name="textInfoAboutCreator">Criado por Tiago Rebelo, aluno do curso ECGM, numero 20537</string>
@@ -25,4 +24,8 @@
     <string name="btLogout">Desconectar</string>
     <string name="textInfoAboutObjective">Objetivo</string>
     <string name="btaddReporte">Novo Reporte</string>
+    <string name="reportTipo">Tipo</string>
+    <string name="reportDesc">Descrição</string>
+    <string name="newReport">Novo Reporte</string>
+    <string name="reportTitle">Titulo</string>
 </resources>

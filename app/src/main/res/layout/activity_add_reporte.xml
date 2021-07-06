@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="@string/reportTipo"
+        android:hint="@string/reportTitle"
         android:minHeight="16dp"
         android:textSize="18sp" />
 
@@ -60,7 +60,7 @@
         android:layout_margin="16dp"
         android:onClick="cancelReporte"
         android:text="@string/btCancel"
-        app:backgroundTint="@color/design_default_color_error" />
+        app:backgroundTint="#C14242" />
     </LinearLayout>
 
 </LinearLayout>

@@ -50,7 +50,7 @@
         android:layout_margin="16dp"
         android:onClick="NovoRep"
         android:text="@string/btSave"
-        app:backgroundTint="#43A047" />
+        app:backgroundTint="#3D7887" />
 
     <Button
         android:id="@+id/btCancelarReporte"
@@ -59,7 +59,7 @@
         android:layout_margin="16dp"
         android:onClick="cancelReporte"
         android:text="@string/btCancel"
-        app:backgroundTint="@color/design_default_color_error" />
+        app:backgroundTint="#C14242" />
     </LinearLayout>
 
 </LinearLayout>

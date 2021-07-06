@@ -64,7 +64,7 @@
             android:gravity="center"
             android:onClick="btAddNotaCancelar"
             android:text="@string/btCancel"
-            app:backgroundTint="@android:color/holo_red_dark" />
+            app:backgroundTint="#C14242" />
     </LinearLayout>
 
 </LinearLayout>
